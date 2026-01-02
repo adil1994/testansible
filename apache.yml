@@ -1,0 +1,9 @@
+---
+- name: Manage Apache on Ubuntu
+  hosts: all
+  become: yes
+  tasks:
+    - name: Start Apache
+      service:
+        name: apache2
+        state: started
